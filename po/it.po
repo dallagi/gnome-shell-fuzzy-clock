@@ -1,0 +1,120 @@
+# Italian translations for Fuzzy Clock package
+# Traduzioni italiane per il pacchetto Fuzzy Clock..
+# Copyright (C) 2012 Marco Dallagiacoma
+# This file is distributed under the same license as the Fuzzy Clock package.
+# Marco Dallagiacoma <marco.dallagiacoma@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-15 20:37+0200\n"
+"PO-Revision-Date: 2012-09-15 20:41+0200\n"
+"Last-Translator: Marco DallaG <marco.dallagiacoma@gmail.com>\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: extension.js:16
+#, c-format
+msgid "%0 o'clock"
+msgstr "le %0 in punto"
+
+#: extension.js:17
+msgid "five past %0"
+msgstr "le %0 e cinque"
+
+#: extension.js:18
+msgid "ten past %0"
+msgstr "le %0 e dieci"
+
+#: extension.js:19
+msgid "quarter past %0"
+msgstr "le %0 e un quarto"
+
+#: extension.js:20
+msgid "twenty past %0"
+msgstr "le %0 e venti"
+
+#: extension.js:21
+msgid "twenty five past %0"
+msgstr "le %0 e venticinque"
+
+#: extension.js:22
+msgid "half past %0"
+msgstr "le %0 e mezza"
+
+#: extension.js:23
+msgid "twenty five to %1"
+msgstr "le %1 meno venticinque"
+
+#: extension.js:24
+msgid "twenty to %1"
+msgstr "le %1 meno venti"
+
+#: extension.js:25
+msgid "quarter to %1"
+msgstr "le %1 meno un quarto"
+
+#: extension.js:26
+msgid "ten to %1"
+msgstr "le %1 meno dieci"
+
+#: extension.js:27
+msgid "five to %1"
+msgstr "le %1 meno cinque"
+
+#: extension.js:28
+msgid "%1 o'clock"
+msgstr "le %1 in punto"
+
+#: extension.js:32 extension.js:44
+msgid "twelve"
+msgstr "dodici"
+
+#: extension.js:33
+msgid "one"
+msgstr "una"
+
+#: extension.js:34
+msgid "two"
+msgstr "due"
+
+#: extension.js:35
+msgid "three"
+msgstr "tre"
+
+#: extension.js:36
+msgid "four"
+msgstr "quattro"
+
+#: extension.js:37
+msgid "five"
+msgstr "cinque"
+
+#: extension.js:38
+msgid "six"
+msgstr "sei"
+
+#: extension.js:39
+msgid "seven"
+msgstr "sette"
+
+#: extension.js:40
+msgid "eight"
+msgstr "otto"
+
+#: extension.js:41
+msgid "nine"
+msgstr "nove"
+
+#: extension.js:42
+msgid "ten"
+msgstr "dieci"
+
+#: extension.js:43
+msgid "eleven"
+msgstr "undici"

@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-15 20:37+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: extension.js:16
+#, c-format
+msgid "%0 o'clock"
+msgstr ""
+
+#: extension.js:17
+msgid "five past %0"
+msgstr ""
+
+#: extension.js:18
+msgid "ten past %0"
+msgstr ""
+
+#: extension.js:19
+msgid "quarter past %0"
+msgstr ""
+
+#: extension.js:20
+msgid "twenty past %0"
+msgstr ""
+
+#: extension.js:21
+msgid "twenty five past %0"
+msgstr ""
+
+#: extension.js:22
+msgid "half past %0"
+msgstr ""
+
+#: extension.js:23
+msgid "twenty five to %1"
+msgstr ""
+
+#: extension.js:24
+msgid "twenty to %1"
+msgstr ""
+
+#: extension.js:25
+msgid "quarter to %1"
+msgstr ""
+
+#: extension.js:26
+msgid "ten to %1"
+msgstr ""
+
+#: extension.js:27
+msgid "five to %1"
+msgstr ""
+
+#: extension.js:28
+msgid "%1 o'clock"
+msgstr ""
+
+#: extension.js:32 extension.js:44
+msgid "twelve"
+msgstr ""
+
+#: extension.js:33
+msgid "one"
+msgstr ""
+
+#: extension.js:34
+msgid "two"
+msgstr ""
+
+#: extension.js:35
+msgid "three"
+msgstr ""
+
+#: extension.js:36
+msgid "four"
+msgstr ""
+
+#: extension.js:37
+msgid "five"
+msgstr ""
+
+#: extension.js:38
+msgid "six"
+msgstr ""
+
+#: extension.js:39
+msgid "seven"
+msgstr ""
+
+#: extension.js:40
+msgid "eight"
+msgstr ""
+
+#: extension.js:41
+msgid "nine"
+msgstr ""
+
+#: extension.js:42
+msgid "ten"
+msgstr ""
+
+#: extension.js:43
+msgid "eleven"
+msgstr ""

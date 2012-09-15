@@ -1,0 +1,119 @@
+# English translations for Fuzzy Clock package.
+# Copyright (C) 2012 THE Fuzzy Clock'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Fuzzy Clock package.
+# Marco Dallagiacoma <marco.dallagiacoma@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-15 20:37+0200\n"
+"PO-Revision-Date: 2012-09-15 20:39+0200\n"
+"Last-Translator: Marco DallaG <marco.dallagiacoma@gmail.com>\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: extension.js:16
+#, c-format
+msgid "%0 o'clock"
+msgstr "%0 o'clock"
+
+#: extension.js:17
+msgid "five past %0"
+msgstr "five past %0"
+
+#: extension.js:18
+msgid "ten past %0"
+msgstr "ten past %0"
+
+#: extension.js:19
+msgid "quarter past %0"
+msgstr "quarter past %0"
+
+#: extension.js:20
+msgid "twenty past %0"
+msgstr "twenty past %0"
+
+#: extension.js:21
+msgid "twenty five past %0"
+msgstr "twenty five past %0"
+
+#: extension.js:22
+msgid "half past %0"
+msgstr "half past %0"
+
+#: extension.js:23
+msgid "twenty five to %1"
+msgstr "twenty five to %1"
+
+#: extension.js:24
+msgid "twenty to %1"
+msgstr "twenty to %1"
+
+#: extension.js:25
+msgid "quarter to %1"
+msgstr "quarter to %1"
+
+#: extension.js:26
+msgid "ten to %1"
+msgstr "ten to %1"
+
+#: extension.js:27
+msgid "five to %1"
+msgstr "five to %1"
+
+#: extension.js:28
+msgid "%1 o'clock"
+msgstr "%1 o'clock"
+
+#: extension.js:32 extension.js:44
+msgid "twelve"
+msgstr "twelve"
+
+#: extension.js:33
+msgid "one"
+msgstr "one"
+
+#: extension.js:34
+msgid "two"
+msgstr "two"
+
+#: extension.js:35
+msgid "three"
+msgstr "three"
+
+#: extension.js:36
+msgid "four"
+msgstr "four"
+
+#: extension.js:37
+msgid "five"
+msgstr "five"
+
+#: extension.js:38
+msgid "six"
+msgstr "six"
+
+#: extension.js:39
+msgid "seven"
+msgstr "seven"
+
+#: extension.js:40
+msgid "eight"
+msgstr "eight"
+
+#: extension.js:41
+msgid "nine"
+msgstr "nine"
+
+#: extension.js:42
+msgid "ten"
+msgstr "ten"
+
+#: extension.js:43
+msgid "eleven"
+msgstr "eleven"
