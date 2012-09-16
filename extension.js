@@ -14,7 +14,6 @@ const Lang = imports.lang;
 
 const Gettext = imports.gettext;
 Gettext.textdomain("fuzzyclock");
-//Gettext.bindtextdomain("fuzzyclock@dallagi.eu", imports.misc.extensionUtils.getCurrentExtension().path + "/locale");
 const _ = Gettext.gettext;
 
 const UPDATE_INTERVAL = 5000;
