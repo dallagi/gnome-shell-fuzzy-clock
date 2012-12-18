@@ -21,55 +21,55 @@ msgstr ""
 #: extension.js:16
 #, c-format
 msgid "%0 o'clock"
-msgstr "le %0 in punto"
+msgstr "%0 in punto"
 
 #: extension.js:17
 msgid "five past %0"
-msgstr "le %0 e cinque"
+msgstr "%0 e cinque"
 
 #: extension.js:18
 msgid "ten past %0"
-msgstr "le %0 e dieci"
+msgstr "%0 e dieci"
 
 #: extension.js:19
 msgid "quarter past %0"
-msgstr "le %0 e un quarto"
+msgstr "%0 e un quarto"
 
 #: extension.js:20
 msgid "twenty past %0"
-msgstr "le %0 e venti"
+msgstr "%0 e venti"
 
 #: extension.js:21
 msgid "twenty five past %0"
-msgstr "le %0 e venticinque"
+msgstr "%0 e venticinque"
 
 #: extension.js:22
 msgid "half past %0"
-msgstr "le %0 e mezza"
+msgstr "%0 e mezza"
 
 #: extension.js:23
 msgid "twenty five to %1"
-msgstr "le %1 meno venticinque"
+msgstr "%1 meno venticinque"
 
 #: extension.js:24
 msgid "twenty to %1"
-msgstr "le %1 meno venti"
+msgstr "%1 meno venti"
 
 #: extension.js:25
 msgid "quarter to %1"
-msgstr "le %1 meno un quarto"
+msgstr "%1 meno un quarto"
 
 #: extension.js:26
 msgid "ten to %1"
-msgstr "le %1 meno dieci"
+msgstr "%1 meno dieci"
 
 #: extension.js:27
 msgid "five to %1"
-msgstr "le %1 meno cinque"
+msgstr "%1 meno cinque"
 
 #: extension.js:28
 msgid "%1 o'clock"
-msgstr "le %1 in punto"
+msgstr "%1 in punto"
 
 #: extension.js:32 extension.js:44
 msgid "twelve"
