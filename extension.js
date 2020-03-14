@@ -19,31 +19,24 @@ const _ = Gettext.gettext;
 
 var hours_list, hour_names = null; // will initialize later, when gettext will be available
 
-function FuzzyClock() {
-    this._init();
-}
 
-FuzzyClock.prototype = {
-    _init: function() {
+class FuzzyClock {
+    constructor() {
         this.statusArea = Main.panel.statusArea;
         this.clockLabel = this.statusArea.dateMenu.actor.label_actor;
-    },
+    }
 
-    // Run: function() {
-    //     this.run = true;
-    //     this.on_timeout();
-    //     Mainloop.timeout_add(UPDATE_INTERVAL, Lang.bind(this, this.on_timeout));
-    // },
+    enable() {
+        this.signalID = this.clockLabel.connect("notify::text", Lang.bind(this, this.setText));
+        this.setText();
+    }
 
-    FuzzyHour: function() {
-        let now = new Date();
-        let hours = now.getHours();
-        return hours_list[Math.round(now.getMinutes() / 5)]
-            .replace("%0", hour_names[hours >= 12 ? hours - 12 : hours])
-            .replace("%1", hour_names[hours +1 >= 12 ? hours +1 -12 : hours +1]);
-    },
+    disable() {
+        this.clockLabel.disconnect(this.signalID);
+        this.clockLabel.set_text(this.origText);
+    }
 
-    setText: function() {
+    setText() {
         let currText = this.clockLabel.get_text();
         let fuzzyTime = this.FuzzyHour();
         if (fuzzyTime != currText) {
@@ -51,20 +44,18 @@ FuzzyClock.prototype = {
             this.origText = currText;
             this.clockLabel.set_text(fuzzyTime);
         }
-    },
+    }
 
-    enable: function() {
-        this.signalID = this.clockLabel.connect("notify::text", Lang.bind(this, this.setText));
-        this.setText();
-    },
-
-    disable: function() {
-        this.clockLabel.disconnect(this.signalID);
-        this.clockLabel.set_text(this.origText);
+    FuzzyHour() {
+        let now = new Date();
+        let hours = now.getHours();
+        return hours_list[Math.round(now.getMinutes() / 5)]
+            .replace("%0", hour_names[hours >= 12 ? hours - 12 : hours])
+            .replace("%1", hour_names[hours +1 >= 12 ? hours +1 -12 : hours +1]);
     }
 }
 
-function init(meta) {
+function init() {
     let localeDir = meta.dir.get_child('locale');
     global.log(my_uuid + " localeDir: " + localeDir.get_path());    
     Gettext.bindtextdomain(my_uuid, localeDir.get_path());
@@ -103,3 +94,4 @@ function init(meta) {
 
     return new FuzzyClock();
 }
+
