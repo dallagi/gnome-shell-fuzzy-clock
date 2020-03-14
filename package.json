@@ -1,9 +1,16 @@
 {
     "scripts": {
         "lint": "standard",
-        "lint:fix": "standard --fix"
+        "lint:fix": "standard --fix",
+        "test": "mocha"
     },
     "devDependencies": {
+        "mocha": "^7.1.0",
         "standard": "^14.3.1"
+    },
+    "standard": {
+        "env": {
+            "mocha": true
+        }
     }
 }
