@@ -3,5 +3,6 @@
     "uuid": "Fuzzy_Clock@dallagi",
     "name": "Fuzzy Clock",
     "description": "A human-readable clock for the gnome-shell panel",
-    "url": "https://bitbucket.org/dallagi/fuzzy-clock"
+    "url": "https://github.com/dallagi/gnome-shell-fuzzy-clock"
 }
+
