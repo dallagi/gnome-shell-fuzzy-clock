@@ -19,11 +19,13 @@ class FuzzyClock {
   }
 
   enable () {
+    global.log('Enabling fuzzy clock.')
     this.signalID = this.clockLabel.connect('notify::text', Lang.bind(this, this.setText))
     this.setText()
   }
 
   disable () {
+    global.log('Disabling fuzzy clock.')
     this.clockLabel.disconnect(this.signalID)
     this.clockLabel.set_text(this.originalText)
   }
@@ -35,7 +37,7 @@ class FuzzyClock {
       return
     }
 
-    global.log('Changing time to fuzzy...')
+    global.log('Updating fuzzy time.')
     this.originalText = currentText
     this.clockLabel.set_text(fuzzyTime)
   }
