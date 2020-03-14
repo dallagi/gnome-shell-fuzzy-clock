@@ -1,21 +1,21 @@
 /* eslint-disable no-undef */
 const Lang = imports.lang
 const Main = imports.ui.main
-
+const ExtensionUtils = imports.misc.extensionUtils;
 const Gettext = imports.gettext
 /* eslint-enable no-undef */
 
 const myUuid = 'Fuzzy_Clock@dallagi'
+const Me = ExtensionUtils.getCurrentExtension();
 
 Gettext.textdomain(myUuid)
 const _ = Gettext.gettext
 
-var hoursList; var hourNames = null // will initialize later, when gettext will be available
+const FuzzyTime = Me.imports.lib.fuzzyTime.FuzzyTime;
 
 class FuzzyClock {
   constructor () {
-    this.statusArea = Main.panel.statusArea
-    this.clockLabel = this.statusArea.dateMenu.actor.label_actor
+    this.clockLabel = this._clockLabel()
   }
 
   enable () {
@@ -25,25 +25,24 @@ class FuzzyClock {
 
   disable () {
     this.clockLabel.disconnect(this.signalID)
-    this.clockLabel.set_text(this.origText)
+    this.clockLabel.set_text(this.originalText)
   }
 
   setText () {
-    const currText = this.clockLabel.get_text()
-    const fuzzyTime = this.FuzzyHour()
-    if (fuzzyTime !== currText) {
-      global.log('Changing time to fuzzy...')
-      this.origText = currText
-      this.clockLabel.set_text(fuzzyTime)
+    const currentText = this.clockLabel.get_text()
+    const fuzzyTime = new FuzzyTime(_).toString()
+    if (fuzzyTime === currentText) {
+        return
     }
+
+    global.log('Changing time to fuzzy...')
+    this.originalText = currentText
+    this.clockLabel.set_text(fuzzyTime)
   }
 
-  FuzzyHour () {
-    const now = new Date()
-    const hours = now.getHours()
-    return hoursList[Math.round(now.getMinutes() / 5)]
-      .replace('%0', hourNames[hours >= 12 ? hours - 12 : hours])
-      .replace('%1', hourNames[hours + 1 >= 12 ? hours + 1 - 12 : hours + 1])
+  _clockLabel() {
+    let statusArea = Main.panel.statusArea
+    return statusArea.dateMenu.label_actor
   }
 }
 
@@ -51,38 +50,6 @@ function init (meta) { // eslint-disable-line no-unused-vars
   const localeDir = meta.dir.get_child('locale')
   global.log(myUuid + ' localeDir: ' + localeDir.get_path())
   Gettext.bindtextdomain(myUuid, localeDir.get_path())
-
-  hoursList = [
-    _("%0 o'clock"),
-    _('five past %0'),
-    _('ten past %0'),
-    _('quarter past %0'),
-    _('twenty past %0'),
-    _('twenty five past %0'),
-    _('half past %0'),
-    _('twenty five to %1'),
-    _('twenty to %1'),
-    _('quarter to %1'),
-    _('ten to %1'),
-    _('five to %1'),
-    _("%1 o'clock")
-  ]
-
-  hourNames = [
-    _('twelve'),
-    _('one'),
-    _('two'),
-    _('three'),
-    _('four'),
-    _('five'),
-    _('six'),
-    _('seven'),
-    _('eight'),
-    _('nine'),
-    _('ten'),
-    _('eleven'),
-    _('twelve')
-  ]
 
   return new FuzzyClock()
 }
