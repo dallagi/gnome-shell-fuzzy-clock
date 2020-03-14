@@ -3,95 +3,95 @@
  * and/or modify it under the terms of the Do What The Fuck You Want
  * To Public License, Version 2, as published by Sam Hocevar. See
  * http://sam.zoy.org/wtfpl/COPYING for more details.
- * 
+ *
  * @author: <a href="mailto:marco.dallagiacoma@gmail.com">Marco Dallagiacoma</a>
- */ 
+ */
 
-const GLib = imports.gi.GLib;
-const Lang = imports.lang;
-const Main = imports.ui.main;
+/* eslint-disable no-undef */
+const Lang = imports.lang
+const Main = imports.ui.main
 
-const my_uuid = "Fuzzy_Clock@dallagi";
+const Gettext = imports.gettext
+/* eslint-enable no-undef */
 
-const Gettext = imports.gettext;
-Gettext.textdomain(my_uuid);
-const _ = Gettext.gettext;
+const myUuid = 'Fuzzy_Clock@dallagi'
 
-var hours_list, hour_names = null; // will initialize later, when gettext will be available
+Gettext.textdomain(myUuid)
+const _ = Gettext.gettext
 
+var hoursList; var hourNames = null // will initialize later, when gettext will be available
 
 class FuzzyClock {
-    constructor() {
-        this.statusArea = Main.panel.statusArea;
-        this.clockLabel = this.statusArea.dateMenu.actor.label_actor;
-    }
+  constructor () {
+    this.statusArea = Main.panel.statusArea
+    this.clockLabel = this.statusArea.dateMenu.actor.label_actor
+  }
 
-    enable() {
-        this.signalID = this.clockLabel.connect("notify::text", Lang.bind(this, this.setText));
-        this.setText();
-    }
+  enable () {
+    this.signalID = this.clockLabel.connect('notify::text', Lang.bind(this, this.setText))
+    this.setText()
+  }
 
-    disable() {
-        this.clockLabel.disconnect(this.signalID);
-        this.clockLabel.set_text(this.origText);
-    }
+  disable () {
+    this.clockLabel.disconnect(this.signalID)
+    this.clockLabel.set_text(this.origText)
+  }
 
-    setText() {
-        let currText = this.clockLabel.get_text();
-        let fuzzyTime = this.FuzzyHour();
-        if (fuzzyTime != currText) {
-            global.log("Changing time to fuzzy...");
-            this.origText = currText;
-            this.clockLabel.set_text(fuzzyTime);
-        }
+  setText () {
+    const currText = this.clockLabel.get_text()
+    const fuzzyTime = this.FuzzyHour()
+    if (fuzzyTime !== currText) {
+      global.log('Changing time to fuzzy...')
+      this.origText = currText
+      this.clockLabel.set_text(fuzzyTime)
     }
+  }
 
-    FuzzyHour() {
-        let now = new Date();
-        let hours = now.getHours();
-        return hours_list[Math.round(now.getMinutes() / 5)]
-            .replace("%0", hour_names[hours >= 12 ? hours - 12 : hours])
-            .replace("%1", hour_names[hours +1 >= 12 ? hours +1 -12 : hours +1]);
-    }
+  FuzzyHour () {
+    const now = new Date()
+    const hours = now.getHours()
+    return hoursList[Math.round(now.getMinutes() / 5)]
+      .replace('%0', hourNames[hours >= 12 ? hours - 12 : hours])
+      .replace('%1', hourNames[hours + 1 >= 12 ? hours + 1 - 12 : hours + 1])
+  }
 }
 
-function init() {
-    let localeDir = meta.dir.get_child('locale');
-    global.log(my_uuid + " localeDir: " + localeDir.get_path());    
-    Gettext.bindtextdomain(my_uuid, localeDir.get_path());
+function init (meta) { // eslint-disable-line no-unused-vars
+  const localeDir = meta.dir.get_child('locale')
+  global.log(myUuid + ' localeDir: ' + localeDir.get_path())
+  Gettext.bindtextdomain(myUuid, localeDir.get_path())
 
-    hours_list = [
-        _("%0 o'clock"),
-        _("five past %0"),
-        _("ten past %0"),
-        _("quarter past %0"),
-        _("twenty past %0"),
-        _("twenty five past %0"),
-        _("half past %0"),
-        _("twenty five to %1"),
-        _("twenty to %1"),
-        _("quarter to %1"),
-        _("ten to %1"),
-        _("five to %1"),
-        _("%1 o'clock")
-   ];
+  hoursList = [
+    _("%0 o'clock"),
+    _('five past %0'),
+    _('ten past %0'),
+    _('quarter past %0'),
+    _('twenty past %0'),
+    _('twenty five past %0'),
+    _('half past %0'),
+    _('twenty five to %1'),
+    _('twenty to %1'),
+    _('quarter to %1'),
+    _('ten to %1'),
+    _('five to %1'),
+    _("%1 o'clock")
+  ]
 
-    hour_names = [
-        _("twelve"),
-        _("one"),
-        _("two"),
-        _("three"),
-        _("four"),
-        _("five"),
-        _("six"),
-        _("seven"),
-        _("eight"),
-        _("nine"),
-        _("ten"),
-        _("eleven"),
-        _("twelve")
-    ];
+  hourNames = [
+    _('twelve'),
+    _('one'),
+    _('two'),
+    _('three'),
+    _('four'),
+    _('five'),
+    _('six'),
+    _('seven'),
+    _('eight'),
+    _('nine'),
+    _('ten'),
+    _('eleven'),
+    _('twelve')
+  ]
 
-    return new FuzzyClock();
+  return new FuzzyClock()
 }
-

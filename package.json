@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "lint": "standard",
+        "lint:fix": "standard --fix"
+    },
+    "devDependencies": {
+        "standard": "^14.3.1"
+    }
+}
