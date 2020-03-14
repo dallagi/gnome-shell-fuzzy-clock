@@ -2,7 +2,10 @@
     "scripts": {
         "lint": "standard",
         "lint:fix": "standard --fix",
-        "test": "mocha"
+        "test": "mocha",
+	"pack": "gnome-extensions pack . --extra-source lib --force",
+        "install": "npm run pack && gnome-extensions install Fuzzy_Clock@dallagi.shell-extension.zip --force && echo 'Now restart the shell'",
+	"logs": "journalctl /usr/bin/gnome-shell -f -o cat"
     },
     "devDependencies": {
         "mocha": "^7.1.0",
