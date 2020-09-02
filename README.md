@@ -21,9 +21,35 @@ Some npm commands are available to make development on this extension easier.
 * `npm run install` to install the extension locally (nb: requires a restart of the shell, which can be done via `Alt+F2`, command `r`);
 * `npm run logs` to tail the logs of the Gnome shell, useful in case of errors.
 
-## Translate
+## How to contribute Translations
 
 New translations are very welcome!
 If you want to contribute a translation, generate a `.po` file with the translated strings.
 You can start from an existing one (e.g., `po/it.po`) as a blueprint.
-Then either generate the machine-readable `.mo` file yourself and open a PR, or open an issue with the `.po` file attached.
+
+### Some things to watch out for:
+
+`%0` refers to the *current* hour (should therefore be used in strings like `Five past %0`).
+
+`%1` refers to the *next* hour (use it in `Quarter to %1`, for example.)
+
+Once you are done translating, generate the machine-readable `.mo` file.
+To do so on a Linux system, you'll need to the following:
+
+ - Install the `gettext` package (Use your distro's package manager, this here is for Ubuntu):
+
+ ```
+ $ sudo apt install gettext
+ ```
+
+ - Generate the file by running
+
+ ```
+ $ msgfmt inputfile.po -o fuzzyclock.mo
+ ```
+
+ - Replace `inputfile.po` accordingly, of course.
+
+ - Place the `fuzzyclock.mo` file in the `locale/LANG/` subdirectory, where `LANG` is the Language abbreviation for your translation (e. g. fr, de, en, it).
+
+ - Create a PR with your proposed changes.
