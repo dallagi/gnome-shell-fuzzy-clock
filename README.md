@@ -50,6 +50,6 @@ To do so on a Linux system, you'll need to the following:
 
  - Replace `inputfile.po` accordingly, of course.
 
- - Place the `fuzzyclock.mo` file in the `locale/LANG/` subdirectory, where `LANG` is the Language abbreviation for your translation (e. g. fr, de, en, it).
+ - Place the `fuzzyclock.mo` file in the `locale/LANG/LC_MESSAGES/` subdirectory, where `LANG` is the Language abbreviation for your translation (e. g. fr, de, en, it).
 
  - Create a PR with your proposed changes.
