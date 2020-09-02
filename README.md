@@ -5,7 +5,7 @@ A human-readable clock for the gnome-shell panel.
 ![Screenshot](screenshot.jpeg)
 
 Currently tested on Gnome 3.34 only.
-Translated to English, Italian, German and Esperanto (read below if you want to contribute a translation).
+Translated to English, Italian, German, French and Esperanto (read below if you want to contribute a translation).
 
 ## Install
 
