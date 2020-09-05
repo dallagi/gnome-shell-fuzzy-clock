@@ -72,48 +72,48 @@ msgstr "%1 heures"
 
 #: extension.js:32 extension.js:44
 msgid "twelve"
-msgstr "Douze"
+msgstr "douze"
 
 #: extension.js:33
 msgid "one"
-msgstr "Une"
+msgstr "une"
 
 #: extension.js:34
 msgid "two"
-msgstr "Deux"
+msgstr "deux"
 
 #: extension.js:35
 msgid "three"
-msgstr "Trois"
+msgstr "trois"
 
 #: extension.js:36
 msgid "four"
-msgstr "Quatre"
+msgstr "quatre"
 
 #: extension.js:37
 msgid "five"
-msgstr "Cinq"
+msgstr "cinq"
 
 #: extension.js:38
 msgid "six"
-msgstr "Six"
+msgstr "six"
 
 #: extension.js:39
 msgid "seven"
-msgstr "Sept"
+msgstr "sept"
 
 #: extension.js:40
 msgid "eight"
-msgstr "Huit"
+msgstr "huit"
 
 #: extension.js:41
 msgid "nine"
-msgstr "Neuf"
+msgstr "neuf"
 
 #: extension.js:42
 msgid "ten"
-msgstr "Dix"
+msgstr "dix"
 
 #: extension.js:43
 msgid "eleven"
-msgstr "Onze"
+msgstr "onze"
