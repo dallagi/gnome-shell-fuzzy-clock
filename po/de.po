@@ -76,44 +76,44 @@ msgstr "Zw\366lf"
 
 #: extension.js:33
 msgid "one"
-msgstr "Eins"
+msgstr "eins"
 
 #: extension.js:34
 msgid "two"
-msgstr "Zwei"
+msgstr "zwei"
 
 #: extension.js:35
 msgid "three"
-msgstr "Drei"
+msgstr "drei"
 
 #: extension.js:36
 msgid "four"
-msgstr "Vier"
+msgstr "vier"
 
 #: extension.js:37
 msgid "five"
-msgstr "F\374nf"
+msgstr "f\374nf"
 
 #: extension.js:38
 msgid "six"
-msgstr "Sechs"
+msgstr "sechs"
 
 #: extension.js:39
 msgid "seven"
-msgstr "Sieben"
+msgstr "sieben"
 
 #: extension.js:40
 msgid "eight"
-msgstr "Acht"
+msgstr "acht"
 
 #: extension.js:41
 msgid "nine"
-msgstr "Neun"
+msgstr "neun"
 
 #: extension.js:42
 msgid "ten"
-msgstr "Zehn"
+msgstr "zehn"
 
 #: extension.js:43
 msgid "eleven"
-msgstr "Elf"
+msgstr "elf"
