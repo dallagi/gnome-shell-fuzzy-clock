@@ -26,6 +26,7 @@ Some npm commands are available to make development on this extension easier.
 New translations are very welcome!
 If you want to contribute a translation, generate a `.po` file with the translated strings.
 You can start from an existing one (e.g., `po/it.po`) as a blueprint.
+There are great GUI tools for translations, like [Poedit](https://poedit.net/) or the [GNOME Translation Editor](https://wiki.gnome.org/Apps/Gtranslator).
 
 ### Some things to watch out for:
 
