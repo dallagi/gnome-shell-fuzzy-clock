@@ -4,6 +4,7 @@
         "lint": "standard",
         "lint:fix": "standard --fix",
         "logs": "journalctl /usr/bin/gnome-shell -f -o cat",
+        "prepack": "scripts/prepack.sh",
         "pack": "gnome-extensions pack . --extra-source lib --force",
         "test": "mocha"
     },
