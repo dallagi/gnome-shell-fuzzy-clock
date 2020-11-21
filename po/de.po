@@ -73,7 +73,7 @@ msgstr "%1 Uhr"
 
 #: extension.js:32 extension.js:44
 msgid "twelve"
-msgstr "zöwlf"
+msgstr "zwölf"
 
 #: extension.js:33
 msgid "one"
