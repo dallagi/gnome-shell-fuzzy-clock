@@ -4,6 +4,6 @@
     "name": "Fuzzy Clock",
     "description": "A human-readable clock for the gnome-shell panel",
     "url": "https://github.com/dallagi/gnome-shell-fuzzy-clock",
-    "version": 7
+    "version": 8
 }
 
