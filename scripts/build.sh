@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# Script to run all steps prior to packing. So far:
-# 
-# - Create a compiled *.mo translation file for each *.po file in the 'po'
-#   directory. Ensures that translations are up to date when packing.
+# Builds the extension zip from source.
 
 # Check if all necessary commands are available.
 if ! command -v msgfmt &> /dev/null
@@ -29,5 +26,7 @@ do
   mkdir -p "$FUZZYCLOCK"/../locale/"$LANGUAGE"/LC_MESSAGES
   msgfmt "$FILE" -o "$FUZZYCLOCK"/../locale/"$LANGUAGE"/LC_MESSAGES/fuzzyclock.mo
 done
+
+gnome-extensions pack . --extra-source lib --force
 
 echo "All done!"
