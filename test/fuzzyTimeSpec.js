@@ -23,22 +23,22 @@ describe('FuzzyTime', () => {
   describe('#toString()', () => {
     it('should return <time> o\'clock when minutes are 00', () => {
       mockTime('05:00')
-      assert.strictEqual(new FuzzyTime().toString(), "five o'clock")
+      assert.strictEqual(new FuzzyTime().toString(), "Sat, 1. Jan  -  five o'clock")
     })
 
     it('should round time down when nearest 5-minutes are in the past', () => {
       mockTime('05:02')
-      assert.strictEqual(new FuzzyTime().toString(), "five o'clock")
+      assert.strictEqual(new FuzzyTime().toString(), "Sat, 1. Jan  -  five o'clock")
     })
 
     it('should round time up when nearest 5-minutes are in the future', () => {
       mockTime('05:03')
-      assert.strictEqual(new FuzzyTime().toString(), 'five past five')
+      assert.strictEqual(new FuzzyTime().toString(), 'Sat, 1. Jan  -  five past five')
     })
 
     it('should reference upcoming hour for later minutes', () => {
       mockTime('05:55')
-      assert.strictEqual(new FuzzyTime().toString(), 'five to six')
+      assert.strictEqual(new FuzzyTime().toString(), 'Sat, 1. Jan  -  five to six')
     })
 
     it('should support internationalization', () => {
