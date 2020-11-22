@@ -1,10 +1,10 @@
 {
     "scripts": {
-        "install": "npm run pack && gnome-extensions install Fuzzy_Clock@dallagi.shell-extension.zip --force && echo 'Now restart the shell'",
+        "install": "scripts/install.sh",
         "lint": "standard",
         "lint:fix": "standard --fix",
         "logs": "journalctl /usr/bin/gnome-shell -f -o cat",
-        "pack": "gnome-extensions pack . --extra-source lib --force",
+        "build": "scripts/build.sh",
         "test": "mocha"
     },
     "devDependencies": {

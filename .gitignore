@@ -2,4 +2,7 @@
 *.zip
 *.swp
 
+# '*.mo' files are generated in the 'prepack' step automatically.
+/locale
+
 node_modules
