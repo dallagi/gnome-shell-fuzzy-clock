@@ -4,7 +4,6 @@ A human-readable clock for the gnome-shell panel.
 
 ![Screenshot](screenshot.jpeg)
 
-Currently tested on Gnome 3.34 only.
 Translated to English, Italian, German, French and Esperanto (read below if you want to contribute a translation).
 
 ## Install
@@ -34,23 +33,12 @@ There are great GUI tools for translations, like [Poedit](https://poedit.net/) o
 
 `%1` refers to the *next* hour (use it in `Quarter to %1`, for example.)
 
-Once you are done translating, generate the machine-readable `.mo` file.
-To do so on a Linux system, you'll need to the following:
-
- - Install the `gettext` package (Use your distro's package manager, this here is for Ubuntu):
+To generate the machine-readable `.mo` translation files, place the `<lang>.po` file in the `po/` directory and build the extension with:
 
  ```
- $ sudo apt install gettext
+ $ npm run build
  ```
 
- - Generate the file by running
+Note that `gettext` is required for this command to work.
 
- ```
- $ msgfmt inputfile.po -o fuzzyclock.mo
- ```
-
- - Replace `inputfile.po` accordingly, of course.
-
- - Place the `fuzzyclock.mo` file in the `locale/LANG/LC_MESSAGES/` subdirectory, where `LANG` is the Language abbreviation for your translation (e. g. fr, de, en, it).
-
- - Create a PR with your proposed changes.
+Once the translations are ready, create a PR with your proposed changes.
