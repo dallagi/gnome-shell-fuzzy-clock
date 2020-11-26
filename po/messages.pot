@@ -1,119 +1,118 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Marco Dallagiacoma
+# This file is distributed under the same license as the Fuzzy Clock package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Fuzzy Clock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-15 20:37+0200\n"
+"POT-Creation-Date: 2020-11-26 12:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: extension.js:16
-#, c-format
+#: ../lib/fuzzyTime.js:6
+#, javascript-format
 msgid "%0 o'clock"
 msgstr ""
 
-#: extension.js:17
+#: ../lib/fuzzyTime.js:7
 msgid "five past %0"
 msgstr ""
 
-#: extension.js:18
+#: ../lib/fuzzyTime.js:8
 msgid "ten past %0"
 msgstr ""
 
-#: extension.js:19
+#: ../lib/fuzzyTime.js:9
 msgid "quarter past %0"
 msgstr ""
 
-#: extension.js:20
+#: ../lib/fuzzyTime.js:10
 msgid "twenty past %0"
 msgstr ""
 
-#: extension.js:21
+#: ../lib/fuzzyTime.js:11
 msgid "twenty five past %0"
 msgstr ""
 
-#: extension.js:22
+#: ../lib/fuzzyTime.js:12
 msgid "half past %0"
 msgstr ""
 
-#: extension.js:23
+#: ../lib/fuzzyTime.js:13
 msgid "twenty five to %1"
 msgstr ""
 
-#: extension.js:24
+#: ../lib/fuzzyTime.js:14
 msgid "twenty to %1"
 msgstr ""
 
-#: extension.js:25
+#: ../lib/fuzzyTime.js:15
 msgid "quarter to %1"
 msgstr ""
 
-#: extension.js:26
+#: ../lib/fuzzyTime.js:16
 msgid "ten to %1"
 msgstr ""
 
-#: extension.js:27
+#: ../lib/fuzzyTime.js:17
 msgid "five to %1"
 msgstr ""
 
-#: extension.js:28
+#: ../lib/fuzzyTime.js:18
 msgid "%1 o'clock"
 msgstr ""
 
-#: extension.js:32 extension.js:44
+#: ../lib/fuzzyTime.js:22 ../lib/fuzzyTime.js:34
 msgid "twelve"
 msgstr ""
 
-#: extension.js:33
+#: ../lib/fuzzyTime.js:23
 msgid "one"
 msgstr ""
 
-#: extension.js:34
+#: ../lib/fuzzyTime.js:24
 msgid "two"
 msgstr ""
 
-#: extension.js:35
+#: ../lib/fuzzyTime.js:25
 msgid "three"
 msgstr ""
 
-#: extension.js:36
+#: ../lib/fuzzyTime.js:26
 msgid "four"
 msgstr ""
 
-#: extension.js:37
+#: ../lib/fuzzyTime.js:27
 msgid "five"
 msgstr ""
 
-#: extension.js:38
+#: ../lib/fuzzyTime.js:28
 msgid "six"
 msgstr ""
 
-#: extension.js:39
+#: ../lib/fuzzyTime.js:29
 msgid "seven"
 msgstr ""
 
-#: extension.js:40
+#: ../lib/fuzzyTime.js:30
 msgid "eight"
 msgstr ""
 
-#: extension.js:41
+#: ../lib/fuzzyTime.js:31
 msgid "nine"
 msgstr ""
 
-#: extension.js:42
+#: ../lib/fuzzyTime.js:32
 msgid "ten"
 msgstr ""
 
-#: extension.js:43
+#: ../lib/fuzzyTime.js:33
 msgid "eleven"
 msgstr ""
