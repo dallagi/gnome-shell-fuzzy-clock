@@ -1,4 +1,5 @@
-# French translations for Fuzzy Clock package.
+# French translations for Fuzzy Clock.
+# Traduction française pour Fuzzy Clock.
 # Copyright (C) 2020 Fuzzy Clock's COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Marco DallaG <marco.dallagiacoma@gmail.com>, 2012.
@@ -7,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-15 20:37+0200\n"
-"PO-Revision-Date: 2012-12-18 21:50+0100\n"
+"POT-Creation-Date: 2020-11-26 11:26+0100\n"
+"PO-Revision-Date: 2020-11-26 11:26+0100\n"
 "Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -17,103 +18,103 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: extension.js:16
-#, c-format
+#: ../lib/fuzzyTime.js:6
+#, javascript-format
 msgid "%0 o'clock"
 msgstr "%0 heures"
 
-#: extension.js:17
+#: ../lib/fuzzyTime.js:7
 msgid "five past %0"
 msgstr "%0 heures cinq"
 
-#: extension.js:18
+#: ../lib/fuzzyTime.js:8
 msgid "ten past %0"
 msgstr "%0 heures dix"
 
-#: extension.js:19
+#: ../lib/fuzzyTime.js:9
 msgid "quarter past %0"
 msgstr "%0 heures et quart"
 
-#: extension.js:20
+#: ../lib/fuzzyTime.js:10
 msgid "twenty past %0"
 msgstr "%0 heures et vingt"
 
-#: extension.js:21
+#: ../lib/fuzzyTime.js:11
 msgid "twenty five past %0"
 msgstr "%0 heures et vingt-cinq"
 
-#: extension.js:22
+#: ../lib/fuzzyTime.js:12
 msgid "half past %0"
 msgstr "%0 heures et demi"
 
-#: extension.js:23
+#: ../lib/fuzzyTime.js:13
 msgid "twenty five to %1"
 msgstr "%1 heures moins vingt-cinq"
 
-#: extension.js:24
+#: ../lib/fuzzyTime.js:14
 msgid "twenty to %1"
 msgstr "%1 heures moins vingt"
 
-#: extension.js:25
+#: ../lib/fuzzyTime.js:15
 msgid "quarter to %1"
 msgstr "%1 heures moins le quart"
 
-#: extension.js:26
+#: ../lib/fuzzyTime.js:16
 msgid "ten to %1"
 msgstr "%1 heures moins dix"
 
-#: extension.js:27
+#: ../lib/fuzzyTime.js:17
 msgid "five to %1"
 msgstr "%1 heures moins cinq"
 
-#: extension.js:28
+#: ../lib/fuzzyTime.js:18
 msgid "%1 o'clock"
 msgstr "%1 heures"
 
-#: extension.js:32 extension.js:44
+#: ../lib/fuzzyTime.js:22 ../lib/fuzzyTime.js:34
 msgid "twelve"
 msgstr "douze"
 
-#: extension.js:33
+#: ../lib/fuzzyTime.js:23
 msgid "one"
 msgstr "une"
 
-#: extension.js:34
+#: ../lib/fuzzyTime.js:24
 msgid "two"
 msgstr "deux"
 
-#: extension.js:35
+#: ../lib/fuzzyTime.js:25
 msgid "three"
 msgstr "trois"
 
-#: extension.js:36
+#: ../lib/fuzzyTime.js:26
 msgid "four"
 msgstr "quatre"
 
-#: extension.js:37
+#: ../lib/fuzzyTime.js:27
 msgid "five"
 msgstr "cinq"
 
-#: extension.js:38
+#: ../lib/fuzzyTime.js:28
 msgid "six"
 msgstr "six"
 
-#: extension.js:39
+#: ../lib/fuzzyTime.js:29
 msgid "seven"
 msgstr "sept"
 
-#: extension.js:40
+#: ../lib/fuzzyTime.js:30
 msgid "eight"
 msgstr "huit"
 
-#: extension.js:41
+#: ../lib/fuzzyTime.js:31
 msgid "nine"
 msgstr "neuf"
 
-#: extension.js:42
+#: ../lib/fuzzyTime.js:32
 msgid "ten"
 msgstr "dix"
 
-#: extension.js:43
+#: ../lib/fuzzyTime.js:33
 msgid "eleven"
 msgstr "onze"

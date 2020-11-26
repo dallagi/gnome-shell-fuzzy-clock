@@ -5,6 +5,7 @@
         "lint:fix": "standard --fix",
         "logs": "journalctl /usr/bin/gnome-shell -f -o cat",
         "build": "scripts/build.sh",
+        "update-po" : "scripts/update-po.sh",
         "test": "mocha"
     },
     "devDependencies": {
