@@ -41,7 +41,7 @@ msgstr "Zwanzig nach %0"
 
 #: extension.js:21
 msgid "twenty five past %0"
-msgstr "Fünf vor halb %0"
+msgstr "Fünf vor halb %1"
 
 #: extension.js:22
 msgid "half past %0"
